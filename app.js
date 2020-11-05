@@ -2,20 +2,18 @@
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
 Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
-git branch
+
 "The sum of 4 and 7 is 11."
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { 
+function sum(a, b) {
   var sum = a + b;
-  var str = `The sum of ${a} and ${b} is ${sum}.`;
+  var string  = `The sum of ${a} and ${b} is ${sum}.`;
 
-  return [sum, str];
+  return [sum, string];
 }
-
-console.log(sum);
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7); 
 
