@@ -87,7 +87,6 @@ function sumArray(a) {
 
 var sum1 = sum(a[0], a[1])[0];
 var sum2 = sum(sum1, a[2])[0];
-console.log(sum2);
 
 var string = `${a[0]},${a[1]},${a[2]} was passed in as an array of numbers, and ${sum2} is their sum.`;
   
@@ -113,9 +112,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function multiplyArray(a) {
+
+var product1 = multiply(a[0], a[1])[0];
+var product2 = multiply(product1, a[2])[0];
+
+var string = `The numbers ${a[0]},${a[1]},${a[2]} have a product of ${product2}.`;
+  
+return [product2, string];
+
+}
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray); 
+testMultiplyArray(testArray); 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
