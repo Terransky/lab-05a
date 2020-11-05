@@ -81,12 +81,23 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-//  a = sumArr[0], b = sumArr[1], c = sumArr[2]
+var testArray = [2, 3, 4];
 
+function sumArray(a) {
+
+var sum1 = sum(a[0], a[1])[0];
+var sum2 = sum(sum1, a[2])[0];
+console.log(sum2);
+
+var string = `${a[0]},${a[1]},${a[2]} was passed in as an array of numbers, and ${sum2} is their sum.`;
+  
+return [sum2, string];
+ 
+}
 
 // Here is the test for sumArray(); uncomment it to run it
+ testSumArray(testArray); 
 
-// testSumArray(testArray); 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
