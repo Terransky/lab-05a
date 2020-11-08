@@ -56,12 +56,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { 
-  var sum = a + b + c;
-  var product = a * b * c;
-  var sumString =  `${a} and ${b} and ${c} sum to ${sum}.`;
-  var productString = `The product of ${a} and ${b} and ${c} is ${product}.`;
-
-  return [sum, product, sumString, productString];
+  var sum1 = sum(a, b)[0];
+  var sum2 = sum(sum1, c)[0];
+  var product1 = multiply(a, b)[0];
+  var product2 = multiply(product1, c)[0];
+  var sumString =  `${a} and ${b} and ${c} sum to ${sum2}.`;
+  var productString = `The product of ${a} and ${b} and ${c} is ${product2}.`;
+  
+  return [sum2, product2, sumString, productString];
 
 }
 // Here is the test for sumAndMultiply(); uncomment it to run it
